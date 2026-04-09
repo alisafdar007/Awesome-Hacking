@@ -1,23 +1,6 @@
-name: 'Ali Hassan
-
-on:
-  schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch:
-
-permissions:
-  issues: write
-  pull-requests: write
-  discussions: write
-
-concurrency:
-  group: lock-threads
-
-jobs:
-  action:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: dessant/lock-threads@v5
-        with:
-          issue-inactive-days: '7'
-          pr-inactive-days: '7'
+class Languages:
+  def __init__(self):
+    self.python = "Python 🐍"
+    self.bash = "Bash 🔩"
+    self.golang = "Golang (Learning)"
+    self.future = "..."
